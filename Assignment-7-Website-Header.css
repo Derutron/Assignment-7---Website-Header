@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: rgb(28, 236, 73);
+  background-color: rgb(177, 233, 189);
 }
 
 .site-logo img {
@@ -25,13 +25,30 @@ body {
   align-items: center;
   list-style: none
 }
+
+.nav{
+  display: none;
+}
+
+@media (min-width:900px) {
+  .nav-menu{
+      display: none;
+  }
+
+
+.nav{
+  display: block ! important;
+}
+
+}
     
 .nav li:not(:last-child) {
   margin-right: 20px
 }
     
 a{
-  text-decoration-color: #000;
+  text-decoration: none;
+  color: #115f07;
   font-size: 25px
 }
 
@@ -41,4 +58,10 @@ a:hover{
 
 a:active {
   color: rgb(241, 241, 245);
+}
+
+.conbtn{
+  border: 5px solid green;
+  padding: 5px;
+  border-radius: 20px;
 }
